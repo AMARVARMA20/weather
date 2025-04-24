@@ -1,9 +1,18 @@
-import React, {useState}from 'react';
+import React, {useState,useEffect}from 'react';
 import './App.css';
 function App(){
   const[city,setCity]=useState('')
   const[temp,setTemp]=useState(false)
     const[weather,setWeather]=useState([])
+
+    useEffect(()=>{
+      const currentTime=new Date().getHours();
+      if(currentTime>=18 || currentTime<6){
+        document.body.className='night-bg';
+      }else{
+        document.body.className='day-bg';
+      }
+    },[]);
 
     const searchWeather =()=>{
     const url="https://api.weatherapi.com/v1/forecast.json"
@@ -20,6 +29,15 @@ function App(){
       console.log(data)
       setWeather(data)
       setTemp(true) 
+
+     if(data.current.is_day===0){
+      document.body.className="night-bg";
+     }
+     else{
+      document.body.className="day-bg";
+     }
+
+
     })
        setCity('')
       
