@@ -1,0 +1,147 @@
+.main{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #4facfe, #00f2fe, #43e97b);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+
+}
+
+.cloud{
+  position:absolute;
+  width: 180px;
+  opacity: 0.8;
+  animation:float-horizontal 3s ease-in-out  infinite;
+  z-index: 1;
+ 
+ 
+}
+.cloud1{
+  top: 7%;
+  left: 5px;
+ 
+
+}
+.cloud2{
+  top: 25%;
+ right: 7%;
+
+}
+.cloud3{
+  top: 25%;
+  left:15%;
+ 
+}
+.cloud4{
+  top: 7%;
+  right: 15%;
+ 
+}
+@keyframes float-horizontal{
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* drift right and up */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.child1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ padding-top: 100px;
+ padding-bottom: 100px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+#input{
+  width: 500px;
+  height: 40px;
+  border: none;
+ border-radius: 10px;
+ padding-left: 16px;
+ font-size: 25px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ background-color: rgba(0, 0, 0, 0.581);
+ color: rgb(217, 35, 35);
+ font-weight: 100;
+
+}
+#btn{
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  width: 60px;
+  background-color: rgb(169, 226, 226);
+  cursor: pointer;
+  
+}
+.child2{
+  
+  background-color: rgba(38, 35, 219, 0.259);
+  height: 150px;
+  width: 1000px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  
+  align-items: center;
+  padding-left: 80px;
+  column-gap: 10px;
+  flex-wrap: wrap; 
+  
+}
+#img{
+  width: 40px;
+}
+#temp{
+  width: 100px;
+  font-weight: bolder;
+  font-size: 80px;
+  margin-right: 60px;
+ 
+}
+#name{
+ font-size: 40px;
+ margin-left: 60px;
+ 
+}
+#region{
+  height: 30px;
+  font-weight: 400;
+  font-size: 20px;
+}
+#country{
+  height: 50px;
+  font-weight: 400;
+  font-size: 10px;
+}
+.child3{
+  background-color: rgba(198, 212, 212, 0.566);
+  height: 150px;
+  width: 1000px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding-right: 10px;
+  
+  
+ 
+  
+
+}
+.sunrise{
+  margin-left: 50px;
+}
